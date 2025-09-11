@@ -8,62 +8,88 @@
 ### More ablation studies
 - Ref-DAVIS17
 
-<div style="display:flex; gap:20px;">
-
-<div>
-
-| $N$   | $K$   | $J \& F$   |
-|-------|-------|-------|
-| 5 | 5 | 75.1 |
-| 7 | 3 | 75.0 |
-| 5 | 3 | 75.9 |
-| **10**| **3** | **76.7** |
-| 10| 5 | 76.3 |
-
-</div>
-
-<div>
-
-| $H$   | $ \delta $   | $J \& F$   |
-|-------|-------|-------|
-| 1 | 0.1% | 76.5 |
-| 2 | 0.3% | 76.6 |
-| **3** | **0.3%** | **76.7** |
-| 2| 0.2%| 76.5|
-| 3| 0.2%| 76.5|
-
-</div>
-
-</div>
+<table cellspacing="16" cellpadding="0" border="0">
+  <tr>
+    <td valign="top">
+      <table border="1" cellspacing="0" cellpadding="6">
+        <thead>
+          <tr>
+            <th><var>N</var></th>
+            <th><var>K</var></th>
+            <th>J &amp; F</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>5</td><td>5</td><td>75.1</td></tr>
+          <tr><td>7</td><td>3</td><td>75.0</td></tr>
+          <tr><td>5</td><td>3</td><td>75.9</td></tr>
+          <tr><td><strong>10</strong></td><td><strong>3</strong></td><td><strong>76.7</strong></td></tr>
+          <tr><td>10</td><td>5</td><td>76.3</td></tr>
+        </tbody>
+      </table>
+    </td>
+    <td valign="top">
+      <table border="1" cellspacing="0" cellpadding="6">
+        <thead>
+          <tr>
+            <th><var>H</var></th>
+            <th>&delta;</th>
+            <th>J &amp; F</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>0.1%</td><td>76.5</td></tr>
+          <tr><td>2</td><td>0.3%</td><td>76.6</td></tr>
+          <tr><td><strong>3</strong></td><td><strong>0.3%</strong></td><td><strong>76.7</strong></td></tr>
+          <tr><td>2</td><td>0.2%</td><td>76.5</td></tr>
+          <tr><td>3</td><td>0.2%</td><td>76.5</td></tr>
+        </tbody>
+      </table>
+    </td>
+  </tr>
+</table>
 
 - MeViS
 
-<div style="display:flex; gap:20px;">
+<table cellspacing="16" cellpadding="0" border="0">
+  <tr>
+    <td valign="top">
+      <table border="1" cellspacing="0" cellpadding="6">
+        <thead>
+          <tr>
+            <th><var>N</var></th>
+            <th><var>K</var></th>
+            <th>J &amp; F</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>5</td><td>5</td><td>47.8</td></tr>
+          <tr><td>10</td><td>10</td><td>48.8</td></tr>
+          <tr><td>10</td><td>3</td><td>48.7</td></tr>
+          <tr><td><strong>10</strong></td><td><strong>5</strong></td><td><strong>49.1</strong></td></tr>
+        </tbody>
+      </table>
+    </td>
+    <td valign="top">
+      <table border="1" cellspacing="0" cellpadding="6">
+        <thead>
+          <tr>
+            <th><var>H</var></th>
+            <th>&delta;</th>
+            <th>J &amp; F</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>3</td><td>0.1%</td><td>48.9</td></tr>
+          <tr><td><strong>3</strong></td><td><strong>0.3%</strong></td><td><strong>49.1</strong></td></tr>
+          <tr><td>2</td><td>0.3%</td><td>48.9</td></tr>
+          <tr><td>2</td><td>0.2%</td><td>48.7</td></tr>
+        </tbody>
+      </table>
+    </td>
+  </tr>
+</table>
 
-<div>
-
-| $N$   | $K$   | $J \& F$   |
-|-------|-------|-------|
-| 5 | 5 | 47.8 |
-| 10 | 10 | 48.8 |
-| 10 | 3 | 48.7 |
-| **10** | **5** | **49.1** |
-| 20 | 5 | 48.8 |
-
-</div>
-
-<div>
-
-| $H$   | $ \delta $   | $J \& F$   |
-|-------|-------|-------|
-| 3 | 0.1% | 48.9 |
-| **3** | **0.3%** | **49.1** |
-| 2 | 0.3% | 48.9 |
-| 2 | 0.2% | 48.7 |
-
-</div>
-
-</div>
 
 ### Model Complexity and Resource Usage on Ref-Youtube-VOS
 | Method | Learnable params | Training GPU Memory Usage |Inference GPU Memory Usage |
